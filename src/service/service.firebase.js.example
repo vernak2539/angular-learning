@@ -1,15 +1,15 @@
 /**
  * Created by teisaacs on 7/7/14.
  */
-angular.module('devWorkshop.firebaseService', [])
+angular.module('devWorkshop.FirebaseService', [])
 
 //NOTE: Firebase is not an angular resource so can't be injected
    .factory('FirebaseService', function(Firebase){
     var sessionsRef = new Firebase("https://dwguide.firebaseio.com/sessions");
 
-    var firebaseService = {};
+    var FirebaseService = {};
 
-   firebaseService.getSessions = function() {
+   FirebaseService.getSessions = function() {
        var sessions = [];
 
        sessionsRef.on('child_added', function(snapshot) {
@@ -19,5 +19,5 @@ angular.module('devWorkshop.firebaseService', [])
        return sessions;
    };
 
-    return firebaseService;
+    return FirebaseService;
 });

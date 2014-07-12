@@ -1,28 +1,28 @@
 <div class="view speakerView">
-    <div class="addASpeaker" ng-show="loginObj.user">
+    <div class="addASpeaker" ng-show="currentUser">
         <button ng-click="addEditSpeaker()">Add Speaker</button>
     </div>
 
     <div class="speakerHolder">
         <!--need to loop through speakers-->
         <!--ng-repeat="(id, speaker) in speakers"-->
-        <div class="speaker clear">
+        <div class="speaker clear" ng-repeat="(id,speaker) in speakers">
             <div class="speakerHolder">
                 <!--ng-src="{{speaker.image}}"-->
-                <img >
+                <img ng-src="assets/images/{{ speaker.image }}">
 
             <div class="infoHolder">
                 <h3>Name:</h3>
 
                 <!--speaker name {{speaker.name}}-->
-                <p></p>
+                <p>{{speaker.name}}</p>
 
                 <h3>Session:</h3>
 
                 <ul>
                     <!--need to loop through sessions-->
                     <!--ng-repeat="sessionId in speaker.sessions" ng-init="sessionName=getSessionName(sessionId)"-->
-                    <li>
+                    <li ng-repeat="sessionId in speaker.sessions" ng-init="sessionName=getSessionName( sessionId )">
                         <a ng-href="#/sessions/{{sessionId}}">{{sessionName}}</a>
                     </li>
                 </ul>
@@ -31,24 +31,24 @@
                 <h3>Company:</h3>
 
                 <!--company name: {{speaker.company}}-->
-                <p></p>
+                <p>{{speaker.company}}</p>
 
                 <h3>Bio:</h3>
 
                 <!--{{speaker.shortbio}}-->
-                <p></p>
+                <p>{{ speaker.shortbio }}</p>
 
                 <h3>Twitter:</h3>
 
                 <!--{{speaker.twitter}}-->
-                <p></p>
+                <p><a href="http://www.twitter.com/@{{ speaker.twitter }}" target="_blank">@{{ speaker.twitter }}</a></p>
 
                 <h3>Web site:</h3>
 
                 <p><a href="http://{{speaker.website}}" target="_blank">{{speaker.website}}</a></p>
 
-                <button ng-click="addEditSpeaker(id)" ng-show="loginObj.user">Edit</button>
-                <button ng-click="deleteSpeaker(id)" ng-show="loginObj.user">Delete</button>
+                <button ng-click="addEditSpeaker(id)" ng-show="currentUser">Edit</button>
+                <button ng-click="deleteSpeaker(id)" ng-show="currentUser">Delete</button>
             </div>
             </div>
         </div>

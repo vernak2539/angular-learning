@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!--ng-app="dwGuide"-->
-<html>
+<html ng-app="dwGuide">
 <head>
     <title>AngularJS | Workshop</title>
     <meta name="description" content="">
@@ -16,37 +16,37 @@
 
 <!-- header -->
 <!--ng-controller="AppCtrl"-->
-<div id="app-wrapper">
+<div id="app-wrapper" ng-controller="AppCtrl">
     <nav>
         <a href="#home" id="home" ><img src="assets/images/dwiLogoSmall.png"></a>
-        <button class="speakers">SPEAKERS</button>
+        <button ng-click="showSpeakers()" class="speakers">SPEAKERS</button>
 
         <button class="sessions">SESSIONS</button>
 
-        <button class="sessions">LOGIN</button>
+        <button class="sessions" ng-hide="currentUser" ng-click="login()">LOGIN</button>
 
-        <button class="sessions">LOGOUT</button>
+        <button class="sessions" ng-show="currentUser" ng-click="logout()">LOGOUT</button>
 
     </nav>
 
-    <!--<div ng-view></div>-->
+    <div ng-view></div>
 </div>
 
 
 <!-- Libraries -->
-<!--<script src="bower_components/jquery/dist/jquery.min.js"></script>-->
-<!--<script type="text/javascript" src="bower_components/angular/angular.js"></script>-->
-<!--<script type="text/javascript" src="bower_components/angular-route/angular-route.js"></script>-->
-<!--<script type="text/javascript" src="bower_components/firebase/firebase.js"></script>-->
-<!--<script type="text/javascript" src="bower_components/angularfire/angularfire.js"></script>-->
-<!--<script type="text/javascript" src="bower_components/firebase-simple-login/firebase-simple-login.js"></script>-->
+<!-- <script src="bower_components/jquery/dist/jquery.min.js"></script> -->
+<script type="text/javascript" src="bower_components/angular/angular.js"></script>
+<script type="text/javascript" src="bower_components/angular-route/angular-route.js"></script>
+<script type="text/javascript" src="bower_components/firebase/firebase.js"></script>
+<script type="text/javascript" src="bower_components/angularfire/angularfire.js"></script>
+<script type="text/javascript" src="bower_components/firebase-simple-login/firebase-simple-login.js"></script>
 
 <!--&lt;!&ndash; application &ndash;&gt;-->
-<!--<script src="src/app.js"></script>-->
-<!--<script src="src/auth/auth.js"></script>-->
-<!--<script src="src/speakers/speakers.js"></script>-->
-<!--<script src="src/sessions/sessions.js"></script>-->
-<!--<script src="src/service/angularFire.js"></script>-->
+<script src="src/app.js"></script>
+<script src="src/auth/auth.js"></script>
+<script src="src/speakers/speakers.js"></script>
+<script src="src/sessions/sessions.js"></script>
+<script src="src/service/angularFire.js"></script>
 
 </body>
 </html>
