@@ -1,0 +1,284 @@
+
+@font-face {
+    font-family: Franchise;
+    src: url(../assets/fonts/Franchise-Bold.ttf);
+}
+
+*{
+    margin: 0;
+}
+
+.clear{
+    *zoom: 1;
+}
+
+.clear:before, .clear:after {
+    content: "";
+    display: block;
+    line-height: 0;
+    clear: both;
+}
+
+
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background-image: url("images/woodBG.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    overflow: hidden;
+}
+
+#app-wrapper {
+    /*position: absolute;*/
+    height: 100%;
+    width: 100%;
+    left: 100%;
+    top: 0;
+    overflow: hidden;
+}
+
+.view {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    /*left: 100%;*/
+    overflow-x: hidden;
+}
+
+.splashScreen {
+    position: relative;
+    left: 0;
+    text-align: center;
+}
+
+.splashScreen img {
+    position: relative;
+    margin-top: 10%;
+    height: 200px;
+    margin-bottom: 30px;
+}
+
+.splashScreen h1{
+    font-family: Franchise;
+    font-size: 350%;
+}
+
+nav {
+    min-height: 100px;
+    background-color: #726157;
+    padding: 10px 0;
+}
+
+nav a {
+    margin-left: 30px;
+}
+
+nav button {
+    cursor: pointer;
+    position: relative;
+    bottom: 40px;
+    margin-left: 30px;
+    background: rgba(214,204,194,1);
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-family: Franchise;
+    font-size: 150%;
+}
+
+.loginView #container{
+    width: 30%;
+    margin: 0 auto;
+    min-height: 300px;
+    min-width: 330px;
+}
+
+.loginView {
+    position: absolute;
+    top: 150px;
+}
+
+.loginView h1{
+    font-family: Franchise;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.loginView form {
+    margin-bottom: 50px;
+}
+
+input{
+    display: block;
+    border: 1px solid #c7b299;
+    /*-webkit-box-shadow: 0 0 8px  rgba(0,0,0,0.1), 0 0 16px rgba(0,0,0,0.1);*/
+    /*-moz-box-shadow: 0 0 8px  rgba(0,0,0,0.1), 0 0 16px rgba(0,0,0,0.1);*/
+    box-shadow: 0 0 2px  rgba(0,0,0,0.1), 0 0 2px rgba(0,0,0,0.1);
+    padding: 15px;
+    background: rgba(255,255,255,1);
+    border-radius: 5px;
+    margin: 0 auto 20px auto;
+    width: 90%;
+    min-width: 160px;
+}
+
+.loginView label {
+    display: block;
+    float: left;
+    margin: 0 auto 20px auto;
+    width: 50%;
+    min-width: 160px;
+}
+
+.loginView .register {
+    position: relative;
+    left: 40px;
+    height: 30px;
+    margin: 0 auto 20px auto;
+    width: 80%;
+    min-width: 100px;
+}
+
+.loginView .register label {
+    display: inline-block;
+    width: 80%;
+    float: left;
+}
+
+.loginView .checkBox {
+    display: inline;
+    width: 20px;
+    margin-top: 3px;
+    float: left;
+    border: none;
+    box-shadow: none;
+}
+
+.submit{
+    cursor: pointer;
+    /*width: 150px;*/
+    /*margin: 0 auto 20px auto;*/
+    border: 2px solid #c7b299;
+    -webkit-box-shadow: 0 0 8px  rgba(0,0,0,0.1), 0 0 16px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0 0 8px  rgba(0,0,0,0.1), 0 0 16px rgba(0,0,0,0.1);
+    box-shadow: 0 0 2px  rgba(0,0,0,0.1), 0 0 2px rgba(0,0,0,0.1);
+    padding: 15px;
+    background: rgba(214,204,194,1);
+    border-radius: 5px;
+
+    font-size: 130%;
+    font-weight: bold;
+}
+
+.loginView #socialLoginHolder{
+    width: 135px;
+    margin: 0 auto;
+}
+
+.loginView #socialLoginHolder a:first-child{
+    margin-right: 35px;
+}
+
+.speakerView {
+    position: absolute;
+    min-height: 200px;
+    top: 150px;
+}
+
+.speakerView button {
+    height: 30px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border: none;
+    padding: 0 20px;
+    line-height: 30px;
+    font-family: Franchise;
+    font-size: 130%;
+    background: rgba(214,204,194,1);
+    margin: 10px 10px;
+    min-width: 150px;
+}
+
+.addSpeakerFormView {
+
+    top: 150px;
+    min-width: 300px;
+    margin-bottom: 500px;
+}
+
+.addSpeakerFormView button {
+    height: 30px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border: none;
+    padding: 0 20px;
+    line-height: 30px;
+    font-family: Franchise;
+    font-size: 130%;
+    background: rgba(214,204,194,1);
+    margin: 10px 10px;
+    min-width: 150px;
+}
+
+.addFromHolder {
+    width: 40%;
+    height: 100%;
+    background-color: rgba(255,255,255,.5);
+    margin: 0 auto;
+    overflow-y: auto;
+    padding-bottom: 100px;
+}
+
+.speakerView .addASpeaker{
+    width: 20%;
+    margin-left: 10%;
+}
+
+.speakerHolder {
+    width: 80%;
+    height: 100%;
+    background-color: rgba(255,255,255,.5);
+    margin: 0 auto;
+    overflow-y: auto;
+    padding-bottom: 100px;
+}
+
+.speakerView .speakerHolder .speaker{
+    margin-bottom: 20px;
+    border-bottom: 2px solid;
+    padding: 0 0 20px 10px;
+}
+
+.speakerView .speakerHolder .speaker img{
+    float: left;
+    margin-right: 20px;
+}
+
+.speakerView .speakerHolder .speaker h3{
+    margin-top: 10px;
+}
+
+ .speakerView .speakerHolder .speaker .infoHolder{
+    float: left;
+     max-width: 40%;
+ }
+
+.speakerBioView {
+    position: absolute;
+    background-color: #726157;
+    height: 200px;
+    top: 140px;
+}
+
+.sessionsView {
+    position: absolute;
+    background-color: #ccc;
+    height: 200px;
+    top: 140px;
+}

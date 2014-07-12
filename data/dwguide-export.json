@@ -1,0 +1,51 @@
+{
+  "sessions" : {
+    "-JQTpveJVoG3rt37IqWP" : {
+      "room" : "RM_ID",
+      "name" : "How to train your dragon",
+      "sessionTime" : "Fri Jun 27 2014 15:40:18 GMT-0400 (EDT)",
+      "sessionDate" : "Fri Jun 27 2014 15:40:18 GMT-0400 (EDT)"
+    }
+  },
+  "speakers" : {
+    "-JRHx_uVLlnW6AwPFUEN" : {
+      "company" : "Imavex",
+      "bio" : "Eric is a developer for a web development company, Imavex, based out of Noblesville, Indiana. He has used Laravel for both large and small projects. And recently presented a Laravel workshop for the Dev Workshop monthly meetup. When not coding, Eric spends time with his wife and 3 kids in the outdoors.",
+      "sessions" : {
+        "-JRIW9lJ_1gOROzVLDff" : "-JQTpveJVoG3rt37IqWP",
+        "-JRHzE_zpez2GuYA0935" : "-JQTpveJVoG3rt37IqWP",
+        "-JRIOXGeenl98vWQ9r2d" : "-JQTpveJVoG3rt37IqWP"
+      },
+      "shortbio" : "Eric has used Laravel for both large and small projects",
+      "twitter" : "ericjones1",
+      "name" : "Eric Jones",
+      "website" : "www.imavex.com",
+      "image" : "ericThumb.jpg"
+    },
+    "-JRNh5qqXeKChCtYoHDG" : {
+      "company" : "Pixel Pros Inc.",
+      "bio" : "Julia Ouellette is a front-end designer and developer whose focus is the creation of engaging single page web apps, interactive educational materials and corporate dashboards. Julia is passionate about sharing tech knowledge and loves being involved in the local web community. With a small business background, a BCOM in Entrepreneurial Management, and an extensive history in both design and development, Julia’s aim is to bring content to life on the screen.",
+      "shortbio" : "Julia Ouellette is a front-end designer and developer whose focus is the creation of engaging single page web apps.",
+      "twitter" : "jooliah",
+      "name" : "Julia Ouellette",
+      "image" : "juliaThumb.jpg"
+    },
+    "-JRNghNKP6ZIoYLL9KJe" : {
+      "company" : "DayToday",
+      "bio" : "John Laswell is a twenty something web designer and developer with a love of all things web. He studied Computer Science, returned home to Columbus, and is the founder of a small design firm, DayToday.  John finally realized his love of the web during his Summers gaining experience as a Junior Software Engineer and hasn’t looked back since.  He has a healthy obsession with coffee and the YouTubes, but spends most of his time reading about tech news, trying out new technologies, and hacking away at new and existing projects.  His favorite front-end technology is Javascript, back-end technology is PHP, middleware is Android, and operating system is OS X.",
+      "shortbio" : "John Laswell is a twenty something web designer and developer with a love of all things web. He studied Computer Science, returned home to Columbus, and is the founder of a small design firm, DayToday.",
+      "twitter" : "john_laswell",
+      "name" : "John Laswell",
+      "website" : "daytoday.io",
+      "image" : "johnThumb.jpg"
+    }
+  },
+  "tracks" : {
+    "-JQNTeBMy8B1R_kDsgvf" : {
+      "trackName" : "Web Development"
+    },
+    "-JQhA4vAS8xISwRpENAg" : {
+      "trackName" : "Gaming"
+    }
+  }
+}

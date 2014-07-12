@@ -1,0 +1,57 @@
+<div class="view speakerView">
+    <div class="addASpeaker" ng-show="loginObj.user">
+        <button ng-click="addEditSpeaker()">Add Speaker</button>
+    </div>
+
+    <div class="speakerHolder">
+        <!--need to loop through speakers-->
+        <!--ng-repeat="(id, speaker) in speakers"-->
+        <div class="speaker clear">
+            <div class="speakerHolder">
+                <!--ng-src="{{speaker.image}}"-->
+                <img >
+
+            <div class="infoHolder">
+                <h3>Name:</h3>
+
+                <!--speaker name {{speaker.name}}-->
+                <p></p>
+
+                <h3>Session:</h3>
+
+                <ul>
+                    <!--need to loop through sessions-->
+                    <!--ng-repeat="sessionId in speaker.sessions" ng-init="sessionName=getSessionName(sessionId)"-->
+                    <li>
+                        <a ng-href="#/sessions/{{sessionId}}">{{sessionName}}</a>
+                    </li>
+                </ul>
+                <p><a ng-href="#/sessions/sessionId">{{sessionId}}</a></p>
+
+                <h3>Company:</h3>
+
+                <!--company name: {{speaker.company}}-->
+                <p></p>
+
+                <h3>Bio:</h3>
+
+                <!--{{speaker.shortbio}}-->
+                <p></p>
+
+                <h3>Twitter:</h3>
+
+                <!--{{speaker.twitter}}-->
+                <p></p>
+
+                <h3>Web site:</h3>
+
+                <p><a href="http://{{speaker.website}}" target="_blank">{{speaker.website}}</a></p>
+
+                <button ng-click="addEditSpeaker(id)" ng-show="loginObj.user">Edit</button>
+                <button ng-click="deleteSpeaker(id)" ng-show="loginObj.user">Delete</button>
+            </div>
+            </div>
+        </div>
+
+    </div>
+</div>

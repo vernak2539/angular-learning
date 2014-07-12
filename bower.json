@@ -1,0 +1,24 @@
+{
+    "name": "DWGuide",
+    "version": "0.1.0",
+    "authors": [
+        "tisaacs <teisaacs21w@gmail.com>"
+    ],
+    "license": "MIT",
+    "private": true,
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ],
+    "devDependencies": {
+        "angular": "~1.2.18",
+        "angular-route": "~1.2.18",
+        "jquery":"~2.1.1",
+        "firebase": "~1.0.17",
+        "angularfire": "~0.7.1",
+        "firebase-simple-login": "~1.6.1"
+    }
+}

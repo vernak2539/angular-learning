@@ -1,0 +1,20 @@
+<div class=" view addSpeakerFormView">
+    <div class="addFromHolder">
+        <h1>Add Edit Speaker</h1>
+
+        <form ng-submit="addEditSpeakerSubmit()">
+            <input type="text" name="name" placeholder="name" ng-model="speaker.name">
+            <input type="text" name="image" placeholder="image" ng-model="speaker.image">
+            <input type="text" name="company" placeholder="company" ng-model="speaker.company">
+            <input type="text" name="shortbio" placeholder="shortbio" ng-model="speaker.shortbio">
+            <input type="text" name="bio" placeholder="bio" ng-model="speaker.bio">
+
+            <input type="text" name="twitter" placeholder="twitter" ng-model="speaker.twitter">
+            <input type="text" name="website" placeholder="website" ng-model="speaker.website">
+            <input class="submit" id="submit" type="submit" value="Submit" name="submit">
+            <input class="submit" id="cancel" type="button" value="Cancel" name="Cancel" ng-click="cancel()">
+        </form>
+    </div>
+
+</div>
+

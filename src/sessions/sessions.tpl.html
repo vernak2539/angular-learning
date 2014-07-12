@@ -1,0 +1,12 @@
+<div class=" view addSpeakerFormView">
+    <div class="addFromHolder">
+        <h1>Sessions</h1>
+
+        <ul>
+            <li ng-repeat="(name, session) in sessions">
+                <a ng-href="#sessions/{{name}}">{{session.name}} </a><br>
+                IDX:{{name}}
+            </li>
+        </ul>
+    </div>
+</div>

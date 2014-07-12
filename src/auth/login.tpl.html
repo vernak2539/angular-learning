@@ -1,0 +1,25 @@
+<div class="view loginView" data-role="loginView">
+    <div id="container">
+        <h1>Sign up or Log-in</h1>
+
+        <h3>{{errorMsg}}</h3>
+        <form ng-submit="authenticate()">
+            <input type="text" name="username" placeholder="username" ng-model="username">
+            <input type="password" name="password" placeholder="password" ng-model="password">
+            <div class="register clear">
+                <label>Register your user name and password</label>
+                <input class="checkBox" type="checkbox" name="registerUser" ng-model="registerUser">
+            </div>
+            <input class="submit" type="submit" value="Submit" name="submit">
+
+        </form>
+
+        <h1>Or log-in with one of these</h1>
+
+        <div id="socialLoginHolder">
+            <a href="#"><img src="assets/images/twitter.png"></a>
+            <a href="#" ng-click="authenticateGoogle()"><img src="assets/images/google+.png"></a>
+        </div>
+
+    </div>
+</div>
