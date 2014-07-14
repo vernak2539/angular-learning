@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="topLevelApp">
+<head>
+	<meta charset="UTF-8">
+	<title>Testing File</title>
+</head>
+<body>
+	<div ng-controller="NameCtrl as NameController">
+		<h1>{{ NameController.name }}</h1>
+		<input type="text" ng-model="NameController.name" />
+		<button ng-click="NameController.displayName()">button</button>
+	</div>
+
+	<script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+	<script type="text/javascript" src="bower_components/angular-route/angular-route.min.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>
